@@ -21,7 +21,7 @@
     "install:dev": "npm remove ../nestjs-common @moesjarraf/nestjs-common && npm install --install-links ../nestjs-common"
   },
   "dependencies": {
-    "@moesjarraf/nestjs-common": "file:../nestjs-common",
+    "@moesjarraf/nestjs-common": "^1.0.1",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",
