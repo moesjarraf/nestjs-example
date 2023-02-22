@@ -1,45 +1,44 @@
+[Nest.js](https://github.com/nestjs/nest) single page application using common libraries.
+
 ## Description
 
-[Nest.js](https://github.com/nestjs/nest) example using common libraries.
+In this example project we display how easy it is to set up a RESTful single page application, complete with entity/service/repository layers and more. The `backend` folder is where all the magic happens using common libraries. The frontend is simply generated with `@angular/cli`, no tweaks are applied there. It should also be mentioned that angular can easily be swapped to any other framework, as long as it exposes an `index.html` file.
 
-## Installation
+## Running the project
+
+### Backend
 
 ```bash
+$ cd backend
 $ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# backend is now running on localhost:3000
 ```
 
-## Test
+### Frontend
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ cd frontend
+$ npm install
+$ npm run start
+# frontend is now running on localhost:4200
 ```
 
-## Developing against common module locally
+## Routes
 
-```bash
-# clone repository if you don't already have it
-git clone git@github.com:moesjarraf/nestjs-common.git
+### Default behavior
 
-# install common library
-npm run install:dev
-```
+The following behavior is applied to these routes by default.
+
+- `localhost:3000` OR `localhost:3000/api` - swagger documentation
+
+### Single page app behavior
+
+When the `FRONTEND_INDEX` env variable is set, and is correctly pointing to an `index.html` file, the backend will serve the frontend as a single page application. To get this behavior in this example project, all you have to do is `cd frontend && npm run build`, so that the `index.html` file is created.
+
+- `localhost:3000` - serves frontend
+- `localhost:3000/api` - swagger documentation
+
+## Configuration
+
+For all the default configuration options that can be applied to the backend, see [this](https://github.com/moesjarraf/nestjs-common#development) link.

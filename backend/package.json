@@ -1,7 +1,6 @@
 {
-  "name": "@moesjarraf/nestjs-example",
-  "version": "1.0.0",
-  "description": "Nestj.js example using common libraries",
+  "name": "backend",
+  "version": "0.0.0",
   "author": "Moesjarraf J",
   "license": "MIT",
   "scripts": {
