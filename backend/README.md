@@ -40,6 +40,9 @@ $ npm run test:cov
 # clone repository if you don't already have it
 git clone git@github.com:moesjarraf/nestjs-common.git
 
-# install common library
+# install common library locally
 npm run install:dev
+
+# Install common library from npm (if needed again)
+npm run install:prod
 ```

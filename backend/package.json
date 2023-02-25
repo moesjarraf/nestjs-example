@@ -17,10 +17,11 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "test:all": "npm run test:e2e && npm run test",
-    "install:dev": "npm remove ../nestjs-common @moesjarraf/nestjs-common && npm install --install-links ../nestjs-common"
+    "install:dev": "npm remove ../../nestjs-common @moesjarraf/nestjs-common && npm install --install-links ../../nestjs-common",
+    "install:prod": "npm remove ../../nestjs-common @moesjarraf/nestjs-common && npm install @moesjarraf/nestjs-common"
   },
   "dependencies": {
-    "@moesjarraf/nestjs-common": "^1.0.1",
+    "@moesjarraf/nestjs-common": "^1.1.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",
