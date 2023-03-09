@@ -37,12 +37,13 @@ $ npm run test:cov
 ## Developing against common module locally
 
 ```bash
-# clone repository if you don't already have it
+# clone repositories if you don't already have them
 git clone git@github.com:moesjarraf/nestjs-common.git
+git clone git@github.com:moesjarraf/nestjs-library.git
 
-# install common library locally
+# install dependencies locally
 npm run install:dev
 
-# Install common library from npm (if needed again)
+# Install dependencies from npm (if needed again)
 npm run install:prod
 ```

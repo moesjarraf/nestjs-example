@@ -17,8 +17,11 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "test:all": "npm run test:e2e && npm run test",
-    "install:dev": "npm remove ../../nestjs-common @moesjarraf/nestjs-common && npm install --install-links ../../nestjs-common",
-    "install:prod": "npm remove ../../nestjs-common @moesjarraf/nestjs-common && npm install @moesjarraf/nestjs-common"
+    "uninstall:dev": "npm remove ../../nestjs-common ../../nestjs-library",
+    "uninstall:prod": "npm remove @moesjarraf/nestjs-common @moesjarraf/nestjs-library",
+    "uninstall:all": "npm run uninstall:dev && npm run uninstall:prod",
+    "install:dev": "npm run uninstall:all && npm install --install-links ../../nestjs-common ../../nestjs-library",
+    "install:prod": "npm run uninstall:all && npm install @moesjarraf/nestjs-common @moesjarraf/nestjs-library"
   },
   "dependencies": {
     "@moesjarraf/nestjs-common": "^1.2.2",
