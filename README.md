@@ -2,7 +2,14 @@
 
 ## Description
 
-In this example project we display how easy it is to set up a RESTful single page application, complete with entity/service/repository layers and more. The `backend` folder is where all the magic happens using common libraries. The frontend is simply generated with `@angular/cli`, no tweaks are applied there. It should also be mentioned that angular can easily be swapped to any other framework, as long as it exposes an `index.html` file.
+This example project demonstrates how easy it is to set up a RESTful single page application, complete with entity/service/repository layers and more. The `backend` folder is where all the magic happens using common libraries. The frontend is simply generated with `@angular/cli`, no tweaks are applied there. It should also be mentioned that angular can easily be swapped to any other framework, as long as it exposes an `index.html` file.
+
+## Libraries
+
+This project makes use of the following libraries to do the heavy lifting.
+
+- [moesjarraf/nestjs-common](https://github.com/moesjarraf/nestjs-common) Nest.js common libraries
+- [moesjarraf/nestjs-library](https://github.com/moesjarraf/nestjs-library) Nest.js 3rd party libraries
 
 ## Running the project
 
