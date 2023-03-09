@@ -21,7 +21,8 @@
     "install:prod": "npm remove ../../nestjs-common @moesjarraf/nestjs-common && npm install @moesjarraf/nestjs-common"
   },
   "dependencies": {
-    "@moesjarraf/nestjs-common": "^1.1.0",
+    "@moesjarraf/nestjs-common": "^1.2.2",
+    "@moesjarraf/nestjs-library": "^1.1.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",

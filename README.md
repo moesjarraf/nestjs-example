@@ -24,24 +24,37 @@ $ npm run start
 # frontend is now running on localhost:4200
 ```
 
-## Routes
+## Endpoints
 
-### Default behavior
+You can play around with all the endpoints through the swagger API, found at `localhost:3000/api`.
+Note that the `/api` path prefix is reserved for the backend, all other endpoints that do not start with that prefix are assumed to be frontend single page app paths.
 
-The following behavior is applied to these routes by default.
+### Root (/)
+
+The following behavior is applied to the root endpoint by default.
 
 - `localhost:3000` OR `localhost:3000/api` - swagger documentation
-
-### Single page app behavior
 
 When the `FRONTEND_INDEX` env variable is set, and is correctly pointing to an `index.html` file, the backend will serve the frontend as a single page application. To get this behavior in this example project, all you have to do is `cd frontend && npm run build`, so that the `index.html` file is created.
 
 - `localhost:3000` - serves frontend
 - `localhost:3000/api` - swagger documentation
 
+### Cats (/api/cats)
+
+The cats endpoint contains CRUD functionality that is easily added by extending a crud controller.
+
+### Users (/api/users)
+
+The user endpoint demonstrates an integration with keycloak, and how to protect a resource using [nest-keycloak-connect](https://github.com/ferrerojosh/nest-keycloak-connect).
+
+### Keycloak (/api/keycloak)
+
+The keycloak endpoint allows you to easily login to a keycloak server, and retrieve user information.
+
 ## Configuration
 
-For all the default configuration options that can be applied to the backend, see [this](https://github.com/moesjarraf/nestjs-common#development) link.
+For all the default configuration options that can be applied to the backend, see [this](https://github.com/moesjarraf/nestjs-common#configuration) link.
 
 ## Contributing
 
